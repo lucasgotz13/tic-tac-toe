@@ -1,13 +1,51 @@
-.grid {
-  display: grid;
-  gap: 1px;
-  grid-template-columns: repeat(3, 1fr);
-  width: 50%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-div > div {
-  padding: 10px;
-  background-color: #ccc;
+body {
+  margin: 0;
+}
+
+#title {
   text-align: center;
+}
+
+#player-turns {
+  text-align: center;
+}
+
+#win-title {
+  text-align: center;
+}
+
+.grid {
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem; 
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 5px;
+  grid-column: 1 / 4;
 }
 
